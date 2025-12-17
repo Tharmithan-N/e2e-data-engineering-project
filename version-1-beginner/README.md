@@ -38,6 +38,7 @@ version-1-beginner/
 ```bash
 git clone <your-repo-url>
 cd e2e-data-engineering-project
+```
 
 
 2. **Start Docker containers**
