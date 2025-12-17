@@ -36,7 +36,7 @@ version-1-beginner/
 1. **Clone the repository**
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Tharmithan-N/e2e-data-engineering-project.git
 cd e2e-data-engineering-project
 ```
 
@@ -45,21 +45,25 @@ cd e2e-data-engineering-project
 
 ```bash
 docker-compose up -d
+```
 
 3. **Enter Python container**
 
 ```bash
 docker exec -it de_python bash
+```
 
 4. **Install dependencies (inside container)**
 
 ```bash
 pip install psycopg2-binary pandas
+```
 
 5. **Run the ETL script**
 
 ```bash
 python scripts/load_data.py
+```
 
 6. **You should see output like:**
 
