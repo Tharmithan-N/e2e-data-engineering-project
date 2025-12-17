@@ -13,5 +13,15 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  python:
+    image: python:3.13
+    container_name: de_python
+    volumes:
+      - ./version-1-beginner:/app
+    working_dir: /app
+    depends_on:
+      - postgres
+    command: tail -f /dev/null  
+
 volumes:
   pgdata:
